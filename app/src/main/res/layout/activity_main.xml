@@ -5,37 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-   >
-
-
-    <Button
-        android:id="@+id/searchCityButton"
-        android:layout_width="267dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
-        android:text="What's The Weather?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/weatherback"
-        android:onClick="openSearch"
-        android:padding="3dp"
-        android:textSize="16dp"
-        android:textStyle="italic"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/backgroundImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/weatherback"
-       />
+    android:background="@color/colorPrimaryDark">
 
     <EditText
         android:id="@+id/cityNameInput"
@@ -45,14 +15,14 @@
         android:layout_marginTop="132dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Enter city :"
+        android:textColor="@color/colorAccent"
+        android:hint="@string/enter_city"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/backgroundImage"
-        android:padding="3dp"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="3dp" />
 
     <Button
         android:id="@+id/showWeatherButton"
@@ -61,17 +31,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Show Weather"
+        android:text="@string/show_weather"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cityNameInput"
-        android:background="@drawable/weatherback"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
         android:padding="3dp"
-        android:textSize="16dp"
-        android:textStyle="italic"
-        android:visibility="gone"
-        android:onClick="showWeather"
-        />
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        android:onClick="showWeather" />
 
     <TextView
         android:id="@+id/labelCity"
@@ -81,9 +50,9 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
+        android:textColor="@color/colorAccent"
         android:padding="8dp"
-        android:text="TextView"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:textStyle="italic|bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,10 +67,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
-        android:text="TextView"
+        android:textColor="@color/colorAccent"
         android:padding="4dp"
         android:gravity="left"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
